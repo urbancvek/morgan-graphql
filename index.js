@@ -1,4 +1,6 @@
-const morganToken = (req) => {
+import gql from 'graphql-tag';
+
+const morganGraphql = (req) => {
   const { query } = req.body;
   if (!query) return '\n';
   try {
@@ -34,4 +36,4 @@ const morganToken = (req) => {
   }
 };
 
-export default morganToken;
+export default morganGraphql;
