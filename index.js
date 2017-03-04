@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+const gql = require('graphql-tag');
 
 const morganGraphql = (req) => {
   const { query } = req.body;
@@ -36,4 +36,4 @@ const morganGraphql = (req) => {
   }
 };
 
-export default morganGraphql;
+module.exports = morganGraphql;
